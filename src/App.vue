@@ -100,10 +100,89 @@
     <!-- Div formulario  -->
     <div class="w-screen bg-gray-200">
 
+      <!-- Div principal que contiene letras de perfil y formulario  -->
+      <div class="h-auto flex flex-col m-4">
+
+        <!-- Div principal que contiene letras de Perfil > Mi Perfil -->
+        <div class="h-6 flex flex-row">
+           <span class="text-sm font-body font-semibold">Perfil</span>
+           <span class="text-sm font-body ml-2 text-gray-700"> > MI Perfil</span>
+        </div>
+
+        <!-- Div principal que contiene letras de Mi Perfil -->
+        <div class="h-8">
+          <span class="text-xl font-body">MI PERFIL</span>
+        </div>
+
+
+        <!-- Div principal que contiene el formulario -->
+        <div class="h-64 rounded-sm border-2 border-gray-400 bg-white">
+
+      <!-- <el-form  :model="formulario" class="demo-form-inline"> -->
+          <!-- Div secundario que contiene el formulario -->
+          <div class=" h-56 m-3">
+
+            <!-- Div que contiene el nombre y apellido -->
+            <div class="h-24 flex flex-row">
+
+              <div class="w-1/2 flex flex-col mr-5">
+
+              <span class="font-hairline text-gray-600 w-full bg-white">Nombres</span>
+              <div class="pt-2">
+                <el-input placeholder="René Isaac"  v-model="formula"></el-input>
+              </div>
+              </div>
+
+              <div class="w-1/2 lex flex-col">
+              <span class="font-hairline text-gray-600">Apellidos</span>
+
+              <div class="pt-2">
+                <el-input placeholder="Cortez Mata"  v-model="input"></el-input>
+              </div>
+              </div>
+            </div>
+
+            <!-- Div que contiene el correo y perfil -->
+            <div class="h-24 flex flex-row">
+              <div class="w-2/6 mr-3 flex flex-col">
+                <span class="font-hairline text-gray-600">Correo</span>
+
+                <div class="pt-2">
+                  <el-input placeholder="isaac.cortez@hotmail.com"  v-model="input"></el-input>
+                </div>
+              </div>
+
+              <div class="w-2/6 mr-3 flex flex-col">
+                <span class="font-hairline text-gray-600">Perfil</span>
+
+                <div class="pt-2">
+                  <el-input placeholder="Admin"  v-model="input"></el-input>
+                </div>
+              </div>
+              
+              <div class="w-2/6 flex flex-col">
+                <span class="font-hairline text-gray-600">Identificador</span>
+
+                <div class="pt-2">
+                  <el-input placeholder="isaac.cortez@hotmail.com"  v-model="UHGRTR545"></el-input>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- </el-form> -->
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="w-16">
+    <div class="w-16 flex flex-col justify-end">
 
+      <div class="w-8 h-8 rounded-full m-2 border-solid">
+        <img src="./assets/images/salir.png" alt="">
+      </div>
     </div>
   </div>
 </template>
